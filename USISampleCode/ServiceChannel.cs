@@ -67,12 +67,15 @@ namespace USISampleCode
             var appliesTo = ConfigurationManager.AppSettings["appliesTo"];
             var rst = new RequestSecurityToken
             {
-                Claims = { new RequestClaim("http://vanguard.ebusiness.gov.au/2008/06/identity/claims/abn", false),
-                    new RequestClaim("http://vanguard.ebusiness.gov.au/2008/06/identity/claims/credentialtype", false) },
+                Claims = {
+                    new RequestClaim("http://vanguard.ebusiness.gov.au/2008/06/identity/claims/credentialtype", false)
+                    , new RequestClaim("http://vanguard.ebusiness.gov.au/2008/06/identity/claims/abn", false)
+                },
                 AppliesTo = new EndpointReference(appliesTo),
                 Lifetime = new Lifetime(DateTime.UtcNow, DateTime.UtcNow.AddMinutes(tokenLifeTimeMinutes)),
                 RequestType = RequestTypes.Issue,
                 KeyType = KeyTypes.Symmetric,
+                KeySizeInBits = 256,
                 TokenType = "http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"
             };
 

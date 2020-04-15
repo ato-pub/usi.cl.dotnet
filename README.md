@@ -1,4 +1,3 @@
-"USI dotnet client based on USI sample code"
 
 USISampleCode
 
@@ -8,3 +7,4 @@ For convenience, a copy is in Releases.
 
 2. Open the sln file, right click the solution, "Restore NuGet packages"
 
+3. See defaultProxy in App.config
