@@ -1,0 +1,41 @@
+﻿<CreateUSI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://usi.gov.au/2018/ws">
+  <RequestId>42378</RequestId>
+  <OrgCode>0001</OrgCode>
+  <Application>
+    <ApplicationId>1</ApplicationId>
+    <DVSCheckRequired>true</DVSCheckRequired>
+    <UserReference>OrgUserWhoCreatedThis</UserReference>
+    <ContactDetails>
+      <CountryOfResidenceCode>1101</CountryOfResidenceCode>
+      <EmailAddress>freddy+23988214@tes.com</EmailAddress>
+      <Phone>
+        <Home>0255555555</Home>
+        <Mobile>0412341234</Mobile>
+      </Phone>
+      <NationalAddress>
+        <Address1>3784 Habte St</Address1>
+        <SuburbTownCity>KALLANGUR</SuburbTownCity>
+        <State>QLD</State>
+        <PostCode>4503</PostCode>
+      </NationalAddress>
+    </ContactDetails>
+    <PersonalDetails>
+      <Gender>X</Gender>
+      <FirstName>Lavon</FirstName>
+      <MiddleName>Karoly</MiddleName>
+      <FamilyName>Zorn</FamilyName>
+      <DateOfBirth>1984-09-02</DateOfBirth>
+      <CountryOfBirthCode>1101</CountryOfBirthCode>
+      <TownCityOfBirth>Springfield</TownCityOfBirth>
+      <IsPreferredName>false</IsPreferredName>
+    </PersonalDetails>
+    <DVSDocument xsi:type="BirthCertificateDocumentType">
+      <RegistrationNumber>11111111</RegistrationNumber>
+      <RegistrationState>ACT</RegistrationState>
+      <RegistrationDate>1991-12-11</RegistrationDate>
+      <RegistrationYear>1991</RegistrationYear>
+      <DatePrinted>1996-10-27</DatePrinted>
+      <CertificateNumber>145926</CertificateNumber>
+    </DVSDocument>
+  </Application>
+</CreateUSI>
